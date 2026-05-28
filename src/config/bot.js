@@ -156,32 +156,34 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Trinket",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Trinkets",
       // Currency symbol shown in balances.
-      symbol: "$",
+      symbol: "𒈔"
+
+Emojis: https://emoj.info/stick",
     },
 
     // Starting balance for new users.
     startingBalance: 0,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 100000,
+    baseBankCapacity: 0,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 0,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 0,
+    workMax: 0,
 
     // Beg command random payout range.
-    begMin: 5,
-    begMax: 50,
+    begMin: 0,
+    begMax: 0,
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.0,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
@@ -255,7 +257,7 @@ export const botConfig = {
 
     // Allowed winner count range.
     minimumWinners: 1,
-    maximumWinners: 10,
+    maximumWinners: 2,
 
     // Allowed giveaway duration range in milliseconds.
     // 300000 = 5 minutes.
@@ -359,7 +361,7 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Welcome {user} to {server}! To gain access to the rest of the server, please introduce yourself in #",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
@@ -437,29 +439,29 @@ export const botConfig = {
   features: {
     // Core systems.
     economy: true,
-    leveling: true,
-    moderation: true,
+    leveling: false,
+    moderation: false,
     logging: true,
-    welcome: true,
+    welcome: false,
 
     // Community engagement systems.
-    tickets: true,
+    tickets: false,
     giveaways: true,
-    birthday: true,
-    counter: true,
+    birthday: false,
+    counter: false,
 
     // Security and self-service systems.
-    verification: true,
-    reactionRoles: true,
-    joinToCreate: true,
+    verification: false,
+    reactionRoles: false,
+    joinToCreate: false,
 
     // Utility/quality-of-life modules.
-    voice: true,
+    voice: false,
     search: true,
     tools: true,
     utility: true,
-    community: true,
-    fun: true,
+    community: false,
+    fun: false,
   },
 };
 
